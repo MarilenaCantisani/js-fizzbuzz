@@ -5,17 +5,23 @@ var multipleOf3 = "Fizz";
 var multipleOf5 = "Buzz";
 var multipleOfBoth = "FizzBuzz";
 
-for (var i = 0; i < 100; i++) {
-    if (i % 3 == 0) {
-        console.log ("Numero ", multipleOf3);
+for (var i = 1; i <= 100; i++) {
+    if (i % 3 == 0 && i % 5 == 0) {
+        console.log (multipleOfBoth);
     } 
-    else if (i % 5 == 0) {
-        console.log ("Numero ", multipleOf5);   
+    else if (i % 3 == 0) {
+        console.log (multipleOf3);   
     }
-    else if ((i % 3 == 0) && (i % 5 == 0)) {
-        console.log ("Numero ", multipleOfBoth);
+    else if (i % 5 == 0) {
+        console.log (multipleOf5);
     }
     else {
-        console.log ("Numero", i + 1);
-    }
+        console.log (i);
+    }   
 }
+
+
+
+
+
+
